@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Салон красоты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo-area">
+        <div class="logo"></div>
+        <div class="site-title">Velvet</div>
+    </div>
+
+    <button class="burger-btn" id="burgerBtn" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav-link active">Главная</a>
+        <a href="#about" class="nav-link">О нас</a>
+        <a href="page1.html" class="nav-link">Услуги</a>
+        <a href="page2.html" class="nav-link">Мастера</a>
+        <a href="page3.html" class="nav-link">Контакты</a>
+    </nav>
+</header>
+
+<div class="promo-block">
+    <div class="promo-text" >
+            <h2>Акции</h2>
+            <p>Скидка 20% на все стрижки до конца месяца</p>
+            <br>
+            <p>Первая процедура чистки лица со скидкой 30%</p>
+            <br>
+            <p>Маникюр+педикюр за 3480р вместо 4800р</p>
+            <br>
+    </div>
+    <div class="promo-image">
+            <img src="header.jpg">
+    </div>
+    </div>
+
+
+<div id="main-page">
+    <div class="main">
+    <h2 id="about">О нас</h2>
+    <div class="about-section">
+        <div class="cards-container">
+            <div class="card">
+                <p>Подбираем процедуры индивидуально: проведём бесплатную консультацию и создадим персональный план ухода</p>
+            </div>
+            <div class="card">
+                <p>Забудьте о очередях: онлайн-запись 24/7 и точное соблюдение времени визита</p>
+            </div>
+            <div class="card">
+                <p>Даём подробные рекомендации по домашнему уходу и остаёмся на связи после процедуры</p>
+            </div>
+        </div>
+    </div>
+
+
+    <h2>Наши услуги</h2>
+    <div class="services-section">
+
+        <div class="galleryServices">
+
+            <div class="imgServices" >
+                <img src="main1.jpg"width="480" height="480">
+                <p>стрижка</p>
+            </div>
+              
+
+            <div class="imgServices" >
+                <img src="main2.jpg"width="480" height="480">
+                <p>окрашивание</p>
+            </div>
+            <div class="imgServices">
+                <img src="main3.jpg"width="480" height="480">
+                <p>макияж</p>
+            </div>
+            <div class="imgServices">
+                <img src="main4.jpg"width="480" height="480">
+                <p>ногти</p>
+            </div>
+            <div class="imgServices">
+                <img src="main5.jpg"width="480" height="480">
+                <p>спа</p>
+            </div>
+            <div class="imgServices">
+                <img src="main6.jpg"width="480" height="480">
+                <p>загар</p>
+            </div>
+            <div class="imgServices">
+                <img src="main7.jpg"width="480" height="480">
+                <p>чистка лица</p>
+            </div>
+            <div class="imgServices">
+                <img src="main8.jpg"width="480" height="480">
+                <p>брови</p>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="special-section-wrapper">
+    <h2 class="special-title">Специальные предложения</h2>
+    <div class="special-section">
+        <div class="card2">
+            <p>Сертификат на 3 процедуры (любые их списка) за 7480р. вместо 9 000</p>
+            <br>
+            <p>Выбирайте: массаж, уход за лицом, маникюр стрижка</p>
+        </div>
+        <div class="card2">
+            <p>Сертификат на 4800р - идеальный подарок на любой случай</p>
+            <br>
+            <p>Действителен 6 месяцев. Можно использовать частями </p>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            Velvet
+        </div>
+        
+        <nav class="footer-nav">
+            <a href="index.html" class="footer-nav-link">Главная</a>
+            <a href="index.html"  class="footer-nav-link">О нас</a>
+            <a href="page1.html"  class="footer-nav-link">Услуги</a>
+            <a href="page2.html"  class="footer-nav-link">Мастера</a>
+            <a href="page3.html"  class="footer-nav-link">Контакты</a>
+        </nav>
+        
+        <div class="footer-info">
+            Рабочие часы: <br>
+            пн-чт: 9:00-18:00 <br>
+            пт-вс: 10:00-20:00 <br>
+            Адрес: Невский пр., 15, Санткт-Петербург
+
+        </div>
+        
+        <div class="footer-social">
+            <a href="#" class="social-icon">Phone</a>
+            <a href="#" class="social-icon">Telegram</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Бургер-меню
+    const burger = document.getElementById('burgerBtn');
+    const navMenu = document.getElementById('mainNav');
+
+    burger.addEventListener('click', function() {
+        navMenu.classList.toggle('open');
+        // Блокировка прокрутки при открытом меню (опционально)
+        if (navMenu.classList.contains('open')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Закрываем меню после клика по любой ссылке
+    document.querySelectorAll('.nav a').forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768 && navMenu.classList.contains('open')) {
+                navMenu.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+
+    // При изменении размера окна на десктоп — убираем класс open
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768 && navMenu.classList.contains('open')) {
+            navMenu.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+    });
+</script>
+</body>
+</html>

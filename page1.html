@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Салон красоты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo-area">
+        <div class="logo"></div>
+        <div class="site-title">Velvet</div>
+    </div>
+
+    <button class="burger-btn" id="burgerBtn" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav-link active">Главная</a>
+        <a href="#about" class="nav-link">О нас</a>
+        <a href="page1.html" class="nav-link">Услуги</a>
+        <a href="page2.html" class="nav-link">Мастера</a>
+        <a href="page3.html" class="nav-link">Контакты</a>
+    </nav>
+</header>
+
+<div class="services-container">
+    <!-- Категория 1: Маникюр -->
+    <div class="service-category">
+        <div class="category-header">
+            <h2>Стрижка/Укладка</h2>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel1">
+                <div class="carousel-slide">
+                    <img src="haircut1.jpg" alt="Женская стрижка">
+                    <div class="slide-caption">Женская стрижка</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="haircut2.jpg" alt="Мужская стрижка">
+                    <div class="slide-caption">Мужская стрижка</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="haircut3.jpg" alt="Укладка волос">
+                    <div class="slide-caption">Укладка волос</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="haircut4.jpg" alt="Детская стрижка">
+                    <div class="slide-caption">Детская стрижка</div>
+                </div>
+            </div>
+            <button class="nav-btn btn-prev" data-carousel="carousel1">←</button>
+            <button class="nav-btn btn-next" data-carousel="carousel1">→</button>
+        </div>
+    </div>
+
+    <div class="service-category">
+        <div class="category-header">
+            <h2>Окрашивание волос</h2>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel2">
+                <div class="carousel-slide">
+                    <img src="coloring1.jpg" alt="Окрашивание в один тон">
+                    <div class="slide-caption">Окрашивание в один тон</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="coloring2.jpg" alt="Омбре">
+                    <div class="slide-caption">Омбре</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="coloring3.jpg" alt="Аир-тач">
+                    <div class="slide-caption">Аир-тач</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="coloring4.jpg" alt="Балаяж">
+                    <div class="slide-caption">Балаяж</div>
+                </div>
+            </div>
+            <button class="nav-btn btn-prev" data-carousel="carousel2">←</button>
+            <button class="nav-btn btn-next" data-carousel="carousel2">→</button>
+        </div>
+    </div>
+
+    <div class="service-category">
+        <div class="category-header">
+            <h2>Брови</h2>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel3">
+                <div class="carousel-slide">
+                    <img src="brows1.jpg" alt="Коррекция пинцетом">
+                    <div class="slide-caption">Коррекция пинцетом</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="brows2.jpg" alt="Коррекция воском">
+                    <div class="slide-caption">Коррекция воском</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="brows3.jpg" alt="Окрашивание">
+                    <div class="slide-caption">Окрашивание</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="brows4.jpg" alt="Долговременная укладка">
+                    <div class="slide-caption">Долговременная укладка</div>
+                </div>
+            </div>
+            <button class="nav-btn btn-prev" data-carousel="carousel3">←</button>
+            <button class="nav-btn btn-next" data-carousel="carousel3">→</button>
+        </div>
+    </div>
+
+    <div class="service-category">
+        <div class="category-header">
+            <h2>Макияж</h2>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel4">
+                <div class="carousel-slide">
+                    <img src="makeup1.jpg" alt="Дневной макияж">
+                    <div class="slide-caption">Дневной макияж</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="makeup2.jpg" alt="Свадебный макияж">
+                    <div class="slide-caption">Свадебный макияж</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="makeup3.jpg" alt="Яркиц макияж">
+                    <div class="slide-caption">Яркий макияж</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="makeup4.jpg" alt="Вечерний макияж">
+                    <div class="slide-caption">Вечерний макияж</div>
+                </div>
+            </div>
+            <button class="nav-btn btn-prev" data-carousel="carousel4">←</button>
+            <button class="nav-btn btn-next" data-carousel="carousel4">→</button>
+        </div>
+    </div>
+
+    <div class="service-category">
+        <div class="category-header">
+            <h2>Ногти</h2>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel5">
+                <div class="carousel-slide">
+                    <img src="nails1.jpg" alt="Средняя длина">
+                    <div class="slide-caption">Средняя длина</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="nails2.jpg" alt="Короткие ногти">
+                    <div class="slide-caption">Короткие ногти</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="nails3.jpg" alt="Аппаратный маникюр">
+                    <div class="slide-caption">Аппаратный маникюр</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="nails4.jpg" alt="Длинные ногти">
+                    <div class="slide-caption">Длинные ногти</div>
+                </div>
+            </div>
+            <button class="nav-btn btn-prev" data-carousel="carousel5">←</button>
+            <button class="nav-btn btn-next" data-carousel="carousel5">→</button>
+        </div>
+    </div>
+
+    <div class="service-category">
+        <div class="category-header">
+            <h2>СПА</h2>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel5">
+                <div class="carousel-slide">
+                    <img src="spa1.jpg" alt="Уход для рук">
+                    <div class="slide-caption">Уход для рук</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="spa2.jpg" alt="Уход за волосами">
+                    <div class="slide-caption">Уход за волосами</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="spa3.jpg" alt="Спа для всего тела">
+                    <div class="slide-caption">Спа для всего тела</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="spa4.jpg" alt="Спа для ног">
+                    <div class="slide-caption">Спа для ног</div>
+                </div>
+            </div>
+            <button class="nav-btn btn-prev" data-carousel="carousel5">←</button>
+            <button class="nav-btn btn-next" data-carousel="carousel5">→</button>
+        </div>
+    </div>
+
+    <div class="service-category">
+        <div class="category-header">
+            <h2>Загар</h2>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel5">
+                <div class="carousel-slide">
+                    <img src="tan1.jpg" alt="Автозагар-экспресс">
+                    <div class="slide-caption">Автозагар-экспресс</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="tan2.jpg" alt="Автозагар-премиум">
+                    <div class="slide-caption">Автозагар-премиум</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="tan3.jpg" alt="Сеанс в солярии">
+                    <div class="slide-caption">Сеанс в солярии</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="tan4.jpg" alt="Абонемент на 10 сеансов">
+                    <div class="slide-caption">Абонемент на 10 сеансов</div>
+                </div>
+            </div>
+            <button class="nav-btn btn-prev" data-carousel="carousel5">←</button>
+            <button class="nav-btn btn-next" data-carousel="carousel5">→</button>
+        </div>
+    </div>
+
+    <div class="service-category">
+        <div class="category-header">
+            <h2>Чистка лица</h2>
+        </div>
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel5">
+                <div class="carousel-slide">
+                    <img src="face1.jpg" alt="Ультразвуковая чистка">
+                    <div class="slide-caption">Ультразвуковая чистка</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="face2.jpg" alt="Комбинированная чистка">
+                    <div class="slide-caption">Комбинированная чистка</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="face3.jpg" alt="Пилинг-чистка">
+                    <div class="slide-caption">Пилинг-чистка</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="face4.jpg" alt="Чистка с маской">
+                    <div class="slide-caption">Чистка с маской</div>
+                </div>
+            </div>
+            <button class="nav-btn btn-prev" data-carousel="carousel5">←</button>
+            <button class="nav-btn btn-next" data-carousel="carousel5">→</button>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            Velvet
+        </div>
+        
+        <nav class="footer-nav">
+            <a href="index.html" class="footer-nav-link">Главная</a>
+            <a href="index.html"  class="footer-nav-link">О нас</a>
+            <a href="page1.html"  class="footer-nav-link">Услуги</a>
+            <a href="page2.html"  class="footer-nav-link">Мастера</a>
+            <a href="page3.html"  class="footer-nav-link">Контакты</a>
+        </nav>
+        
+        <div class="footer-info">
+            Рабочие часы: <br>
+            пн-чт: 9:00-18:00 <br>
+            пт-вс: 10:00-20:00 <br>
+            Адрес: Невский пр., 15, Санткт-Петербург
+
+        </div>
+        
+        <div class="footer-social">
+            <a href="#" class="social-icon">Phone</a>
+            <a href="#" class="social-icon">Telegram</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </div>
+</footer>
+<script>
+    // Бургер-меню
+    const burger = document.getElementById('burgerBtn');
+    const navMenu = document.getElementById('mainNav');
+
+    burger.addEventListener('click', function() {
+        navMenu.classList.toggle('open');
+        // Блокировка прокрутки при открытом меню (опционально)
+        if (navMenu.classList.contains('open')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Закрываем меню после клика по любой ссылке
+    document.querySelectorAll('.nav a').forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768 && navMenu.classList.contains('open')) {
+                navMenu.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+
+    // При изменении размера окна на десктоп — убираем класс open
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768 && navMenu.classList.contains('open')) {
+            navMenu.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+    });
+</script>
+<script>
+    // Универсальная функция для всех каруселей
+    function initCarousel(carouselId, dotsId) {
+        const carousel = document.getElementById(carouselId);
+        if (!carousel) return;
+        
+        const prevBtn = document.querySelector(`.btn-prev[data-carousel="${carouselId}"]`);
+        const nextBtn = document.querySelector(`.btn-next[data-carousel="${carouselId}"]`);
+        const dotsContainer = document.getElementById(dotsId);
+        const slides = Array.from(carousel.children);
+        
+        if (!slides.length) return;
+        
+           
+        function updateActiveDot() {
+            if (!dotsContainer) return;
+            const scrollLeft = carousel.scrollLeft;
+            let accumulated = 0;
+            const gap = parseFloat(getComputedStyle(carousel).gap);
+            let activeIndex = 0;
+            
+            for (let i = 0; i < slides.length; i++) {
+                const slideWidth = slides[i].offsetWidth;
+                const start = accumulated;
+                const end = accumulated + slideWidth;
+                if (scrollLeft >= start - slideWidth/2 && scrollLeft < end + slideWidth/2) {
+                    activeIndex = i;
+                    break;
+                }
+                accumulated += slideWidth + gap;
+            }
+            
+            const dots = dotsContainer.querySelectorAll('.dot');
+            dots.forEach((dot, idx) => {
+                if (idx === activeIndex) dot.classList.add('active');
+                else dot.classList.remove('active');
+            });
+        }
+        
+        // Кнопки прокрутки
+        const scrollStep = () => {
+            const slideWidth = slides[0]?.offsetWidth || 300;
+            const gap = parseFloat(getComputedStyle(carousel).gap) || 16;
+            return slideWidth + gap;
+        };
+        
+        prevBtn?.addEventListener('click', () => {
+            carousel.scrollBy({ left: -scrollStep(), behavior: 'smooth' });
+            setTimeout(updateActiveDot, 200);
+        });
+        
+        nextBtn?.addEventListener('click', () => {
+            carousel.scrollBy({ left: scrollStep(), behavior: 'smooth' });
+            setTimeout(updateActiveDot, 200);
+        });
+        
+        carousel.addEventListener('scroll', updateActiveDot);
+        window.addEventListener('resize', () => {
+            updateActiveDot();
+        });
+        
+        updateActiveDot();
+    }
+    
+    // Запускаем для каждой карусели
+    initCarousel('carousel1');
+    initCarousel('carousel2');
+    initCarousel('carousel3');
+    initCarousel('carousel4');
+    initCarousel('carousel5');
+    initCarousel('carousel6');
+    initCarousel('carousel7');
+    initCarousel('carousel8');
+</script>
+</body>
+</html>

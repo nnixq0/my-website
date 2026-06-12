@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Салон красоты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo-area">
+        <div class="logo"></div>
+        <div class="site-title">Velvet</div>
+    </div>
+
+    <button class="burger-btn" id="burgerBtn" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav-link active">Главная</a>
+        <a href="#about" class="nav-link">О нас</a>
+        <a href="page1.html" class="nav-link">Услуги</a>
+        <a href="page2.html" class="nav-link">Мастера</a>
+        <a href="page3.html" class="nav-link">Контакты</a>
+    </nav>
+</header>
+<div class="master">
+    <img src="header_master.jpg" width="100%">
+</div>
+<div class="masters-section">
+    <div class="master-grid">
+        <div class="master-card">
+            <img src="master1.jpg">
+            <p>Екатерина</p>
+            <p>Парикмахер</p>
+            <p>Стаж 9 лет</p>
+        </div>
+        <div class="master-card">
+            <img src="master2.jpg">
+            <p>Анастасия</p>
+            <p>Колорист</p>
+            <p>Стаж 7 лет</p>
+        </div>
+        <div class="master-card">
+            <img src="master3.jpg">
+            <p>Виктория</p>
+            <p>Визажист</p>
+            <p>Стаж 6 лет</p>
+        </div>
+        <div class="master-card">
+            <img src="master4.jpg">
+            <p>Елена</p>
+            <p>Мастер маникюра</p>
+            <p>Стаж 5 лет</p>
+        </div>
+        <div class="master-card">
+            <img src="master5.jpg">
+            <p>Ольга</p>
+            <p>Спа-мастер</p>
+            <p>Стаж 4 года</p>
+        </div>
+        <div class="master-card">
+            <img src="master6.jpg">
+            <p>Мария</p>
+            <p>Мастер по загару</p>
+            <p>Стаж 3 года</p>
+        </div>
+        <div class="master-card">
+            <img src="master7.jpg">
+            <p>Дарья</p>
+            <p>Косметолог</p>
+            <p>Стаж 8 лет</p>
+        </div>
+        <div class="master-card">
+            <img src="master8.jpg">
+            <p>Ксения</p>
+            <p>Бровист</p>
+            <p>Стаж 4 года</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            Velvet
+        </div>
+        
+        <nav class="footer-nav">
+            <a href="index.html" class="footer-nav-link">Главная</a>
+            <a href="index.html"  class="footer-nav-link">О нас</a>
+            <a href="page1.html"  class="footer-nav-link">Услуги</a>
+            <a href="page2.html"  class="footer-nav-link">Мастера</a>
+            <a href="page3.html"  class="footer-nav-link">Контакты</a>
+        </nav>
+        
+        <div class="footer-info">
+            Рабочие часы: <br>
+            пн-чт: 9:00-18:00 <br>
+            пт-вс: 10:00-20:00 <br>
+            Адрес: Невский пр., 15, Санткт-Петербург
+
+        </div>
+        
+        <div class="footer-social">
+            <a href="#" class="social-icon">Phone</a>
+            <a href="#" class="social-icon">Telegram</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </div>
+</footer>
+<script>
+    // Бургер-меню
+    const burger = document.getElementById('burgerBtn');
+    const navMenu = document.getElementById('mainNav');
+
+    burger.addEventListener('click', function() {
+        navMenu.classList.toggle('open');
+        // Блокировка прокрутки при открытом меню (опционально)
+        if (navMenu.classList.contains('open')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Закрываем меню после клика по любой ссылке
+    document.querySelectorAll('.nav a').forEach(link => {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768 && navMenu.classList.contains('open')) {
+                navMenu.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+
+    // При изменении размера окна на десктоп — убираем класс open
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768 && navMenu.classList.contains('open')) {
+            navMenu.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+    });
+</script>
+</body>
+</html>
