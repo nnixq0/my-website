@@ -4,6 +4,7 @@
     box-sizing: border-box;
     
 }
+
 body {
     font-family: 'Montserrat Alternates', sans-serif;
     line-height: 1.4;
@@ -665,20 +666,28 @@ input{
     transition: all 0.3s ease;
 }
 @media (max-width: 768px) {
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
     .header {
         flex-wrap: wrap;
         padding: 12px 5%;
+    }
+    h2{
+        font-size: 2rem;
+        padding: 30px 10px 10px 10px;
     }
     .logo-area {
         width: auto;
     }
     .logo {
-        width: 55px;
-        height: 55px;
+        width: 40px;
+        height: 40px;
         font-size: 1.4rem;
     }
     .site-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .burger-btn {
         display: flex;
@@ -697,8 +706,8 @@ input{
         display: flex;
     }
     .nav a {
-        padding: 16px 20px;
-        font-size: 1.8rem;
+        padding: 10px 20px;
+        font-size: 1rem;
         text-align: center;
         border-top: 1px solid rgba(255, 245, 235, 0.3);
         white-space: normal;
@@ -709,19 +718,21 @@ input{
     .promo-block {
         flex-direction: column;
         align-items: center;
+        margin: 0px;
+        padding: 0%;
     }
     .promo-text {
         min-width: auto;
         max-width: 100%;
-        margin: 10px 0;
     }
     .promo-text p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
-    img{
-        min-width: auto;
-        max-width: 100%;
+    .promo-block img{
+        min-width: 400px;
+        max-width: 100px;
         margin: 10px 0;
+        
     }
     .cards-container {
         flex-direction: column;
@@ -735,7 +746,7 @@ input{
     }
 
     .card p {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .galleryServices {
@@ -746,7 +757,9 @@ input{
     .imgServices {
         height: 300px;
     }
-
+    .imgServices img {
+        opacity: 0.8;
+    }
     .imgServices p {
         font-size: 1.5rem;
         padding: 10px 0;
@@ -771,7 +784,7 @@ input{
     }
 
     .card2 p {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .footer {
@@ -780,7 +793,7 @@ input{
     }
 
     .footer-logo {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-bottom: 20px;
     }
 
@@ -793,14 +806,14 @@ input{
     }
 
     .footer-nav-link {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     .footer-info {
         flex-direction: column;
         align-items: center;
         gap: 15px;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .footer-social {
@@ -809,7 +822,7 @@ input{
     }
 
     .social-icon {
-        font-size: 1.8rem;
+        font-size: 1rem;
         padding: 6px 12px;
     }
 
@@ -849,38 +862,48 @@ input{
     }
 
     .contact {
-        font-size: 2rem;
-        padding: 30px 20px;
+        font-size: 1rem;
+        margin: 0%;
+        padding: 0px 40px 0px 40px;
     }
-
+    .contact p{
+        font-size: 1rem;
+    }
     .map {
         margin: 30px 20px 0 20px;
     }
+    .map-section p{
+        font-size: 1rem;
+    }
 
+    iframe{
+        width: 100%;
+        height: 300px;
+    }
     .booking-form-wrapper {
         padding: 30px 20px;
         margin: 30px auto;
     }
 
     .form-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .form-label {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 
     .form-input, .form-select, .form-textarea {
-        font-size: 1.6rem;
+        font-size: 1rem;
         padding: 10px 20px;
     }
 
     input {
-        height: 60px;
+        height: 40px;
     }
 
     .form-select {
-        height: 60px;
+        height: 40px;
     }
 
     .booking-submit-btn {
@@ -888,7 +911,7 @@ input{
     }
 
     .centered-text {
-        font-size: rem;
+        font-size: 1rem;
     }
 
     .master-grid {
@@ -897,18 +920,32 @@ input{
     }
     .masters-section {
         padding: 15px;
-        max-width: 95%;
+        max-width: 100%;
     }
     .master-card {
         margin: 0 auto;
-        max-width: 350px;
+        max-width: 400px;
+        padding-bottom: 10px;
     }
     .master-card img {
-        width: 80%; 
-        height: 200px;
+        width: 90%; 
+        height: 300px;
         margin: 15px 15px 0 15px;
     }
     .master-card p {
-        font-size: 1rem; 
+        font-size: 1rem;
+        color: #00000050;
+    }
+    .services-container h2{
+        font-size: 1.4rem;
+        margin-bottom: 0;
+    }
+    .services-container img{
+        width: 300px;
+        height: 250px;
+    }
+    .service-category{
+        padding: 0%;
+        margin: 0;
     }
 }
